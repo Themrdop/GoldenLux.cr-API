@@ -25,7 +25,7 @@ public class EmailSender: IEmailSender
         
             if (result.Successful)
             {
-                _logger.Log(LogLevel.Information,"email send correctly", result.MessageId);
+                _logger.Log(LogLevel.Information,"email send correctlly", result.MessageId);
             }else{
                 _logger.LogError("Failed to send an email.\n{Errors}", string.Join(Environment.NewLine, result.ErrorMessages));
             }

@@ -38,6 +38,8 @@ if(app.Environment.IsDevelopment()){
     app.UseHsts();
 }
 
+app.UseHttpsRedirection();
+
 app.ConfigureApi();
 
 app.Run();
